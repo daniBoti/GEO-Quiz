@@ -21,6 +21,7 @@
 		88A228C2189EAD9D00747B38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88A228A4189EAD9C00747B38 /* UIKit.framework */; };
 		88A228CA189EAD9D00747B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88A228C8189EAD9D00747B38 /* InfoPlist.strings */; };
 		88A228CC189EAD9D00747B38 /* GEO_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A228CB189EAD9D00747B38 /* GEO_QuizTests.m */; };
+		88A228D7189EB1D900747B38 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A228D6189EB1D900747B38 /* Categories.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		88A228C7189EAD9D00747B38 /* GEO QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GEO QuizTests-Info.plist"; sourceTree = "<group>"; };
 		88A228C9189EAD9D00747B38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		88A228CB189EAD9D00747B38 /* GEO_QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEO_QuizTests.m; sourceTree = "<group>"; };
+		88A228D5189EB1D900747B38 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categories.h; path = ../Categories.h; sourceTree = "<group>"; };
+		88A228D6189EB1D900747B38 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Categories.m; path = ../Categories.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 				88A228B2189EAD9C00747B38 /* Main.storyboard */,
 				88A228B5189EAD9C00747B38 /* ViewController.h */,
 				88A228B6189EAD9C00747B38 /* ViewController.m */,
+				88A228D5189EB1D900747B38 /* Categories.h */,
+				88A228D6189EB1D900747B38 /* Categories.m */,
 				88A228B8189EAD9C00747B38 /* Images.xcassets */,
 				88A228A7189EAD9C00747B38 /* Supporting Files */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88A228B7189EAD9C00747B38 /* ViewController.m in Sources */,
+				88A228D7189EB1D900747B38 /* Categories.m in Sources */,
 				88A228B1189EAD9C00747B38 /* AppDelegate.m in Sources */,
 				88A228AD189EAD9C00747B38 /* main.m in Sources */,
 			);
