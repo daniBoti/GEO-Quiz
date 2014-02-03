@@ -22,6 +22,7 @@
 		88A228CA189EAD9D00747B38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 88A228C8189EAD9D00747B38 /* InfoPlist.strings */; };
 		88A228CC189EAD9D00747B38 /* GEO_QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A228CB189EAD9D00747B38 /* GEO_QuizTests.m */; };
 		88A228D7189EB1D900747B38 /* Categories.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A228D6189EB1D900747B38 /* Categories.m */; };
+		88A228DA189F8A0A00747B38 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A228D9189F8A0A00747B38 /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		88A228CB189EAD9D00747B38 /* GEO_QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GEO_QuizTests.m; sourceTree = "<group>"; };
 		88A228D5189EB1D900747B38 /* Categories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Categories.h; path = ../Categories.h; sourceTree = "<group>"; };
 		88A228D6189EB1D900747B38 /* Categories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Categories.m; path = ../Categories.m; sourceTree = "<group>"; };
+		88A228D8189F8A0A00747B38 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Game.h; path = ../Game.h; sourceTree = "<group>"; };
+		88A228D9189F8A0A00747B38 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Game.m; path = ../Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				88A228B6189EAD9C00747B38 /* ViewController.m */,
 				88A228D5189EB1D900747B38 /* Categories.h */,
 				88A228D6189EB1D900747B38 /* Categories.m */,
+				88A228D8189F8A0A00747B38 /* Game.h */,
+				88A228D9189F8A0A00747B38 /* Game.m */,
 				88A228B8189EAD9C00747B38 /* Images.xcassets */,
 				88A228A7189EAD9C00747B38 /* Supporting Files */,
 			);
@@ -204,6 +209,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Dani Boti";
 				TargetAttributes = {
+					88A2289C189EAD9C00747B38 = {
+						DevelopmentTeam = L4R886BK2H;
+					};
 					88A228BD189EAD9D00747B38 = {
 						TestTargetID = 88A2289C189EAD9C00747B38;
 					};
@@ -254,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88A228DA189F8A0A00747B38 /* Game.m in Sources */,
 				88A228B7189EAD9C00747B38 /* ViewController.m in Sources */,
 				88A228D7189EB1D900747B38 /* Categories.m in Sources */,
 				88A228B1189EAD9C00747B38 /* AppDelegate.m in Sources */,
@@ -384,10 +393,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GEO Quiz/GEO Quiz-Prefix.pch";
 				INFOPLIST_FILE = "GEO Quiz/GEO Quiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -397,10 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GEO Quiz/GEO Quiz-Prefix.pch";
 				INFOPLIST_FILE = "GEO Quiz/GEO Quiz-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

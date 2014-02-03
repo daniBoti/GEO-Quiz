@@ -17,11 +17,11 @@
 
 -(IBAction)ButtonFlags:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"CategorySaved"];
+    [[NSUserDefaults standardUserDefaults] setInteger:CategoryFlagsNumber forKey:@"CategorySaved"];
 }
 -(IBAction)ButtonCapitals:(id)sender
 {
-    [[NSUserDefaults standardUserDefaults] setInteger:2 forKey:@"CategorySaved"];
+    [[NSUserDefaults standardUserDefaults] setInteger:CategoryCapitalsNumber forKey:@"CategorySaved"];
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,8 +35,8 @@
 
 - (void)viewDidLoad
 {
-    CategoryFlagsNumber = arc4random() %3;
-    CategoryCapitalsNumber = arc4random() %3;
+    CategoryFlagsNumber     = 1;
+    CategoryCapitalsNumber  = 2;
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
