@@ -38,6 +38,15 @@
     CategoryFlagsNumber     = 1;
     CategoryCapitalsNumber  = 2;
     
+    CategoryFlags.layer.cornerRadius = 2;
+    CategoryFlags.layer.borderWidth = 1;
+    CategoryFlags.layer.borderColor = [UIColor blueColor].CGColor;
+    [CategoryFlags setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    
+    CategoryCapitals.layer.cornerRadius = 2;
+    CategoryCapitals.layer.borderWidth = 1;
+    CategoryCapitals.layer.borderColor = [UIColor orangeColor].CGColor;
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

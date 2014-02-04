@@ -14,6 +14,9 @@ BOOL Answer1Correct;
 BOOL Answer2Correct;
 BOOL Answer3Correct;
 BOOL Answer4Correct;
+int ScoreNumber;
+int LivesNumber;
+BOOL GameInProgress;
 
 @interface Game : UIViewController
 {
@@ -23,6 +26,11 @@ BOOL Answer4Correct;
     IBOutlet UIButton *Answer2;
     IBOutlet UIButton *Answer3;
     IBOutlet UIButton *Answer4;
+    IBOutlet UIButton *New;
+    IBOutlet UIButton *Exit;
+    IBOutlet UILabel *Score;
+    IBOutlet UILabel *Lives;
+    IBOutlet UIImageView *Result;
 }
 
 -(IBAction)Answer1:(id)sender;
@@ -31,5 +39,8 @@ BOOL Answer4Correct;
 -(IBAction)Answer4:(id)sender;
 -(void)CategoryFlags;
 -(void)CategoryCapitals;
+-(void)RightAnswer;
+-(void)WrongAnswer;
+-(void)LoadQuestion;
 
 @end
